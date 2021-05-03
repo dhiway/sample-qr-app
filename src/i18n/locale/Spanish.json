@@ -1,0 +1,119 @@
+{
+  "translation": {
+    "app": {
+      "Scan": "Escanear",
+      "Settings": "Configuraciones",
+      "Activity": "Actividad",
+      "seqrByDhiway": "SEQR por DHIWAY"
+    },
+    "activity": {
+      "noDataUseScan": "¡Parece que aún no ha escaneado ningún código QR! Escanee un código QR para ver las entradas aquí",
+      "disabledMessage": "Ha desactivado la grabación de su actividad de escaneo. Si desea habilitarlo, visite la página Configuración para volver a habilitarlo. La aplicación SEQR seguirá funcionando sin ningún problema sin registro de actividad. Haga clic en Escanear a continuación para abrir la cámara y escanear los códigos"
+    },
+    "onboard": {
+      "title0": "SEQR es",
+      "subTitle0": "Siempre libre",
+      "description0": "¡Bienvenido a una forma segura de escanear códigos QR! Con SEQR ahora puede ver qué hay detrás del QR, estar informado sobre la seguridad del código y si es seguro o arriesgado.",
+      "topContent1": "¡Certeza absoluta en las transacciones diarias!",
+      "title1": "Cómo lo hace ",
+      "subTitle1": "¿TRABAJO?",
+      "description1": "Con SEQR, puede escanear y leer todo tipo de códigos QR. Realiza varias comprobaciones utilizando información de diversas fuentes en línea para identificar posibles riesgos de seguridad. Le permite tomar decisiones informadas sobre si confiar o no en los códigos y el contenido.",
+      "centerContent2": "Si encuentra un enlace web de phishing, infórmelo y ayúdenos a hacer las transacciones más seguras",
+      "title2": "Únete al movimiento por un",
+      "subTitle2": "Internet más seguro",
+      "description2": "Cada vez que encuentre una información clasificada incorrectamente, infórmela para ayudar a más personas a mantenerse más seguras en línea."
+    },
+    "permission": {
+      "proceedWithout": "Proceder sin acceso",
+      "seqrAsk": "SEQR necesita acceso a ",
+      "deny": "Negar",
+      "accessCamera": "Cámara",
+      "cameraReason": "escanear códigos QR",
+      "accessStorage": "Almacenamiento,",
+      "storageReason": "para leer las imágenes de código QR cargadas",
+      "accessLocation": "Ubicación",
+      "locationReason": "para recordarle dónde se escaneó un código QR (en actividad)",
+      "grant": "Otorgar permisos"
+    },
+    "details": {
+      "btnWarning": "(¡No es seguro!)",
+      "btnRisky": "(¡Peligroso!)",
+      "qrContentCopied": "Contenido QR copiado",
+      "translatedText": "Texto traducido"
+    },
+    "scan": {
+      "noCameraAccess": "Sin acceso a la cámara",
+      "noCameraAccessDetail": "Sin acceso a la cámara, SEQR no puede escanear códigos QR",
+      "timeout": "Se acabó el tiempo. Sin QR escaneados",
+      "timeoutText": "No escaneó ningún código en los últimos 30 segundos, vuelva a abrir la pestaña Escanear cuando esté listo para escanear. Mantener la cámara encendida durante mucho tiempo puede agotar la batería. Abriendo la pestaña Actividad.",
+      "qrHint": "Encuentra un código para escanear"
+    },
+    "settings": {
+      "aboutSEQR": "SEQR está diseñado para escanear y leer todo tipo de códigos QR e identificar contenido inseguro que pueda encontrar. Realiza varias verificaciones además de utilizar información de varias fuentes en línea para identificar posibles riesgos de seguridad. Le permite tomar decisiones informadas sobre si confiar o no en los códigos y el contenido.",
+      "safeAdvisory": "Navegación segura",
+      "userAgreement": "Términos de servicio",
+      "privacyPolicy": "Política de privacidad",
+      "aboutDhiway": "Sobre Dhiway",
+      "langChange": "elige tu idioma",
+      "defaultScreenPick": "Actividad como pantalla predeterminada",
+      "recordActivity": "Actividad de registro"
+    },
+    "lang": {
+      "English": "Inglés",
+      "Kannada": "Canarés",
+      "Malayalam": "Malayalam",
+      "Bengali": "bengalí",
+      "Hindi": "hindi"
+    },
+    "common": {
+      "bookQR": "ISBN del libro",
+      "textQR": "El código que escaneó contiene el siguiente detalle",
+      "eventLabel": "Evento",
+      "nameLabel": "Nombre",
+      "addressLabel": "Habla a",
+      "amountLabel": "Cantidad",
+      "paymentLabel": "Pago",
+      "dateLabel": "Fecha",
+      "startsAtLabel": "Empieza a",
+      "locationLabel": "Ubicación",
+      "emailLabel": "Correo electrónico",
+      "phoneNumberLbl": "Número de teléfono",
+      "smsLabel": "SMS",
+      "recipientLabel": "Recipiente",
+      "textMsgLabel": "Mensaje de texto",
+      "composeSmsBtn": "Redactar mensaje de texto",
+      "addToCalendarBtn": "Añadir al calendario",
+      "callOrganizerBtn": "Organizador de llamadas",
+      "addLocationBtn": "Guardar ubicación en mapas",
+      "sendEmailBtn": "Enviar correo electrónico",
+      "qrContent": "Enlace de pago"
+    },
+    "threat": {
+      "typeSafe": "No se encontró contenido inseguro.",
+      "typeNotSecure": "No seguro: probablemente arriesgado",
+      "typeUnSafe": "Peligroso: evite este sitio",
+      "safeTypeDetail": "La información que envía o recibe a través del sitio es segura. Incluso si el sitio está marcado como seguro, siempre tenga cuidado al compartir información privada. Mire la barra de direcciones para asegurarse de que se encuentra en el sitio que desea visitar.",
+      "unSafeTypeDetail": "Este sitio ha sido marcado como inseguro. Visitar este sitio podría engañarlo para que haga algo peligroso, como instalar software o revelar su información personal (por ejemplo, contraseñas, números de teléfono o tarjetas de crédito) o usar su dispositivo para hacer cosas que no es su intención.",
+      "notSecureTypeDetail": "Este sitio no proporciona una conexión segura. Es posible que alguien pueda ver o cambiar la información que envía y recibe a través de este sitio. Le sugerimos que no ingrese ninguna información privada o personal en esta página. Si es posible, no utilice el sitio.",
+      "typeErrorSiteNotFound": "Parece que no podemos llegar al sitio web. Esta página no existe o se ha producido algún otro error horrible. ",
+      "typeErrorFailure": "Estamos trabajando para que esto esté arreglado tan pronto como nos sea posible. Por favor, inténtelo de nuevo más tarde.",
+      "typeErrorNoConnection": "Sin conexión a Internet. Verifique su configuración de red e intente nuevamente"
+    },
+    "modal": {
+      "safeDetails": "La información que envía u obtiene a través del sitio es segura. Incluso si ve este mensaje, siempre tenga cuidado al compartir información privada. Mire la barra de direcciones para asegurarse de que está en el sitio que desea visitar.",
+      "notSecureDetails": "Este sitio no puede proporcionar una conexión segura. Es posible que alguien pueda ver o cambiar la información que envía u obtiene a través de este sitio. Le sugerimos que no ingrese ninguna información privada o personal en esta página. Si es posible, no use el sitio.",
+      "unSafeDetails": "Visitar este sitio podría engañarlo para que haga algo peligroso, como instalar software o revelar su información personal (por ejemplo, contraseñas, números de teléfono o tarjetas de crédito) o usar su computadora para hacer cosas que no es su intención."
+    },
+    "message": {
+      "lastUpdated": "Esta información se actualizó por última vez el {{date}}.",
+      "siteSaftey": "La seguridad del sitio puede cambiar con el tiempo. Vuelve a consultar las actualizaciones.",
+      "paymentDetails": "Enlace de pago",
+      "internetError": "Conexión a Internet lenta o inexistente. Compruebe la configuración de Internet.",
+      "internetErrorHead": "Ups"
+    },
+    "upi": {
+      "detailWithPaymentText": "Este QR contiene un enlace para pagar INR {{amountToPay}} a {{comercianteNombre}} con la dirección VPA {{comercianteId}}. Puede utilizar cualquier aplicación de pago para enviar el dinero si lo desea.",
+      "detailText": "Este QR contiene un enlace para pagar a {{comercianteNombre}} con la dirección VPA {{comercianteId}}. Puede utilizar cualquier aplicación de pago para enviar el dinero si lo desea."
+    }
+  }
+}

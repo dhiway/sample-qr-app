@@ -1,0 +1,119 @@
+{
+  "translation": {
+    "app": {
+      "Scan": "Imbas",
+      "Settings": "Tetapan",
+      "Activity": "Aktiviti",
+      "seqrByDhiway": "SEQR oleh DHIWAY"
+    },
+    "activity": {
+      "noDataUseScan": "Nampaknya anda belum mengimbas kod QR lagi! Sila imbas kod QR untuk melihat entri di sini",
+      "disabledMessage": "Anda telah melumpuhkan rakaman aktiviti imbasan anda. Sekiranya anda ingin mengaktifkannya, sila lawati halaman Tetapan untuk mengaktifkannya semula. Aplikasi SEQR akan terus berfungsi tanpa masalah tanpa rakaman aktiviti. Klik pada Imbas di bawah untuk membuka kamera untuk mengimbas kodnya"
+    },
+    "onboard": {
+      "title0": "SEQR adalah",
+      "subTitle0": "Sentiasa PERCUMA",
+      "description0": "Selamat datang ke kaedah selamat untuk mengimbas kod QR! Dengan SEQR anda kini dapat melihat apa yang ada di belakang QR, diberitahu mengenai keselamatan kod tersebut, dan apakah selamat atau berisiko.",
+      "topContent1": "Kepastian mutlak dalam urus niaga harian!",
+      "title1": "Bagaimana ia berlaku",
+      "subTitle1": "KERJA?",
+      "description1": "Dengan SEQR, anda boleh mengimbas dan membaca semua jenis Kod QR. Ia melakukan beberapa pemeriksaan menggunakan maklumat dari pelbagai sumber dalam talian untuk mengenal pasti risiko keselamatan yang berpotensi. Ini membolehkan anda membuat keputusan yang tepat mengenai sama ada mempercayai kod dan kandungannya atau tidak.",
+      "centerContent2": "Sekiranya anda menjumpai pautan web pancingan data, laporkan dan bantu kami membuat transaksi lebih selamat",
+      "title2": "Sertailah pergerakan untuk a",
+      "subTitle2": "Internet yang lebih selamat",
+      "description2": "Setiap kali anda menemui maklumat yang tidak dikategorikan secara salah, laporkan untuk membantu lebih ramai orang lebih selamat dalam talian."
+    },
+    "permission": {
+      "proceedWithout": "Berjalan tanpa akses",
+      "seqrAsk": "SEQR memerlukan akses ke",
+      "deny": "Tolak",
+      "accessCamera": "Kamera",
+      "cameraReason": "untuk mengimbas Kod QR",
+      "accessStorage": "Penyimpanan",
+      "storageReason": "untuk membaca gambar QR Code yang dimuat naik",
+      "accessLocation": "Lokasi",
+      "locationReason": "untuk mengingatkan anda di mana Kod QR (dalam aktiviti) diimbas",
+      "grant": "Beri kebenaran"
+    },
+    "details": {
+      "btnWarning": "(Tidak Selamat!)",
+      "btnRisky": "(Berbahaya!)",
+      "qrContentCopied": "Kandungan QR yang Disalin",
+      "translatedText": "Teks Diterjemahkan"
+    },
+    "scan": {
+      "noCameraAccess": "Tiada Akses Kamera",
+      "noCameraAccessDetail": "Tanpa akses ke Kamera, SEQR tidak dapat mengimbas Kod QR",
+      "timeout": "Masa tamat. Tiada Imbasan QR",
+      "timeoutText": "Tidak mengimbas kod dalam 30 saat terakhir, buka semula tab Imbas apabila anda sudah bersedia untuk mengimbas. Mengekalkan kamera lama boleh menghabiskan bateri. Membuka tab Aktiviti.",
+      "qrHint": "Cari kod untuk diimbas"
+    },
+    "settings": {
+      "aboutSEQR": "SEQR direka untuk mengimbas dan membaca semua jenis Kod QR dan mengenal pasti kandungan yang tidak selamat yang mungkin anda temui. Ia melakukan beberapa pemeriksaan di samping menggunakan maklumat dari pelbagai sumber dalam talian untuk mengenal pasti potensi risiko keselamatan. Ini membolehkan anda membuat keputusan yang tepat mengenai sama ada mempercayai kod dan kandungannya atau tidak.",
+      "safeAdvisory": "Melayari dengan selamat",
+      "userAgreement": "Syarat Perkhidmatan",
+      "privacyPolicy": "Dasar Privasi",
+      "aboutDhiway": "Mengenai Dhiway",
+      "langChange": "Pilih bahasa anda",
+      "defaultScreenPick": "Aktiviti sebagai skrin lalai",
+      "recordActivity": "Rekodkan Aktiviti"
+    },
+    "lang": {
+      "English": "Bahasa Inggeris",
+      "Kannada": "Kannada",
+      "Malayalam": "Bahasa Malayalam",
+      "Bengali": "Orang Bengali",
+      "Hindi": "Bahasa Hindi"
+    },
+    "common": {
+      "bookQR": "Tempah ISBN",
+      "textQR": "Kod yang anda imbas mengandungi perincian berikut",
+      "eventLabel": "Acara",
+      "nameLabel": "Nama",
+      "addressLabel": "Alamat",
+      "amountLabel": "Jumlah",
+      "paymentLabel": "Pembayaran",
+      "dateLabel": "Tarikh",
+      "startsAtLabel": "Bermula pada",
+      "locationLabel": "Lokasi",
+      "emailLabel": "E-mel",
+      "phoneNumberLbl": "Nombor telefon",
+      "smsLabel": "SMS",
+      "recipientLabel": "Penerima",
+      "textMsgLabel": "Mesej teks",
+      "composeSmsBtn": "Karang pesanan teks",
+      "addToCalendarBtn": "Tambah ke Kalendar",
+      "callOrganizerBtn": "Penganjur Panggilan",
+      "addLocationBtn": "Simpan Lokasi ke Peta",
+      "sendEmailBtn": "Menghantar e-mel",
+      "qrContent": "Pautan Pembayaran"
+    },
+    "threat": {
+      "typeSafe": "Kandungan Tidak Selamat Dijumpai.",
+      "typeNotSecure": "Tidak Selamat - Mungkin Berisiko",
+      "typeUnSafe": "Berbahaya - Elakkan Laman web ini",
+      "safeTypeDetail": "Maklumat yang anda hantar atau terima melalui laman web adalah selamat. Walaupun laman web ini ditandai dengan selamat, sentiasa berhati-hati semasa berkongsi maklumat peribadi. Lihat bar alamat untuk memastikan anda berada di laman web yang ingin anda lawati.",
+      "unSafeTypeDetail": "Laman web ini telah ditandakan sebagai tidak selamat. Mengunjungi laman web ini boleh menipu anda untuk melakukan sesuatu yang berbahaya seperti memasang perisian atau mendedahkan maklumat peribadi anda (contohnya kata laluan, nombor telefon, atau kad kredit) atau menggunakan peranti anda untuk melakukan perkara yang anda tidak berhasrat.",
+      "notSecureTypeDetail": "Laman web ini tidak menyediakan sambungan yang selamat. Seseorang mungkin dapat melihat atau mengubah maklumat yang anda hantar dan terima melalui laman web ini. Kami mencadangkan anda tidak memasukkan maklumat peribadi atau peribadi di halaman ini. Sekiranya boleh, jangan gunakan laman web ini.",
+      "typeErrorSiteNotFound": "We can't seem to reach the web site. This page doesn't exist or some other horrible error has occurred.",
+      "typeErrorFailure": "Kami sedang berusaha untuk memperbaikinya secepat mungkin. Sila cuba sebentar lagi.",
+      "typeErrorNoConnection": "Tiada sambungan internet. Periksa tetapan rangkaian anda dan cuba lagi."
+    },
+    "modal": {
+      "safeDetails": "Maklumat yang anda hantar atau dapatkan melalui laman web ini adalah selamat. Walaupun anda melihat mesej ini, sentiasa berhati-hati semasa berkongsi maklumat peribadi. Lihat bar alamat untuk memastikan anda berada di laman web yang ingin anda lawati.",
+      "notSecureDetails": "Laman web ini tidak dapat menyediakan sambungan yang selamat. Seseorang mungkin dapat melihat atau mengubah maklumat yang anda hantar atau dapatkan melalui laman web ini. Kami mencadangkan anda tidak memasukkan maklumat peribadi atau peribadi di halaman ini. Sekiranya boleh, jangan gunakan laman web ini.",
+      "unSafeDetails": "Mengunjungi laman web ini boleh menipu anda untuk melakukan sesuatu yang berbahaya seperti memasang perisian atau mendedahkan maklumat peribadi anda (contohnya kata laluan, nombor telefon, atau kad kredit) atau menggunakan komputer anda untuk melakukan perkara yang anda tidak berhasrat."
+    },
+    "message": {
+      "lastUpdated": "Maklumat ini terakhir dikemas kini pada {{date}}.",
+      "siteSaftey": "Keselamatan tapak boleh berubah dari masa ke masa. Semak semula untuk mengetahui kemas kini.",
+      "paymentDetails": "Pautan Pembayaran",
+      "internetError": "Sambungan Internet perlahan atau tidak, Sila periksa tetapan internet anda.",
+      "internetErrorHead": "Alamak"
+    },
+    "upi": {
+      "detailWithPaymentText": "QR ini mengandungi pautan untuk membayar INR {{numberToPay}} ke {{merchantName}} dengan alamat VPA {{merchantId}}. Anda boleh menggunakan aplikasi pembayaran untuk mengirim wang jika anda mahu.",
+      "detailText": "QR ini mengandungi pautan untuk membayar {{merchantName}} dengan alamat VPA {{merchantId}}. Anda boleh menggunakan aplikasi pembayaran untuk mengirim wang jika anda mahu."
+    }
+  }
+}

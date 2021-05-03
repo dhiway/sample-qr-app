@@ -1,0 +1,119 @@
+{
+  "translation": {
+    "app": {
+      "Scan": "Scansione",
+      "Settings": "impostazioni",
+      "Activity": "Attività",
+      "seqrByDhiway": "SEQR di DHIWAY"
+    },
+    "activity": {
+      "noDataUseScan": "Sembra che tu non abbia ancora scansionato alcun codice QR! Scansiona un codice QR per vedere le voci qui",
+      "disabledMessage": "Hai disabilitato la registrazione della tua attività di scansione. Se desideri abilitarlo, visita la pagina Impostazioni per riattivarlo. L'app SEQR continuerà a funzionare senza problemi senza la registrazione dell'attività. Fare clic su Scansione in basso per aprire la fotocamera e scansionare i codici"
+    },
+    "onboard": {
+      "title0": "SEQR è",
+      "subTitle0": "Sempre gratis",
+      "description0": "Benvenuto in un modo sicuro per scansionare i codici QR! Con SEQR ora puoi vedere cosa c'è dietro il QR, essere informato sulla sicurezza del codice e se è sicuro o rischioso.",
+      "topContent1": "Assoluta certezza nelle transazioni quotidiane!",
+      "title1": "Come funziona ",
+      "subTitle1": "LAVORO?",
+      "description1": "Con SEQR, puoi scansionare e leggere tutti i tipi di codici QR. Esegue diversi controlli utilizzando informazioni provenienti da varie fonti online per identificare potenziali rischi per la sicurezza. Ti consente di prendere decisioni informate sull'opportunità o meno di fidarti dei codici e dei contenuti.",
+      "centerContent2": "Se trovi un collegamento web di phishing, segnalalo e aiutaci a rendere le transazioni più sicure",
+      "title2": "Unisciti al movimento per a",
+      "subTitle2": "Internet più sicuro",
+      "description2": "Ogni volta che trovi informazioni classificate in modo errato, segnalalo per aiutare più persone a rimanere più al sicuro online."
+    },
+    "permission": {
+      "proceedWithout": "Procedendo senza accesso",
+      "seqrAsk": "SEQR deve accedere a ",
+      "deny": "Negare",
+      "accessCamera": "telecamera",
+      "cameraReason": "per scansionare i codici QR",
+      "accessStorage": "Conservazione,",
+      "storageReason": "per leggere le immagini del codice QR caricate",
+      "accessLocation": "Posizione",
+      "locationReason": "per ricordarti dove è stato scansionato un codice QR (in attività)",
+      "grant": "Concedi le autorizzazioni"
+    },
+    "details": {
+      "btnWarning": "(Non sicuro!)",
+      "btnRisky": "(Pericoloso!)",
+      "qrContentCopied": "Contenuto QR copiato",
+      "translatedText": "Testo tradotto"
+    },
+    "scan": {
+      "noCameraAccess": "Nessun accesso alla fotocamera",
+      "noCameraAccessDetail": "Senza accesso alla fotocamera, SEQR non può scansionare i codici QR",
+      "timeout": "Tempo scaduto. Nessun QR scansionato",
+      "timeoutText": "Nessun codice scansionato negli ultimi 30 secondi, riapri la scheda Scansione quando sei pronto per la scansione. Tenere la fotocamera accesa a lungo potrebbe consumare la batteria. Apertura della scheda Attività.",
+      "qrHint": "Trova un codice da scansionare"
+    },
+    "settings": {
+      "aboutSEQR": "SEQR è progettato per scansionare e leggere tutti i tipi di codici QR e identificare i contenuti non sicuri che potresti incontrare. Oltre a utilizzare le informazioni provenienti da varie fonti online, esegue diversi controlli per identificare potenziali rischi per la sicurezza. Ti consente di prendere decisioni informate sull'opportunità o meno di fidarti dei codici e dei contenuti.",
+      "safeAdvisory": "Navigazione sicura",
+      "userAgreement": "Termini di servizio",
+      "privacyPolicy": "politica sulla riservatezza",
+      "aboutDhiway": "A proposito di Dhiway",
+      "langChange": "seleziona la tua lingua",
+      "defaultScreenPick": "Attività come schermata predefinita",
+      "recordActivity": "Registra attività"
+    },
+    "lang": {
+      "English": "inglese",
+      "Kannada": "Kannada",
+      "Malayalam": "Malayalam",
+      "Bengali": "bengalese",
+      "Hindi": "hindi"
+    },
+    "common": {
+      "bookQR": "Prenota ISBN",
+      "textQR": "Il codice scansionato contiene i seguenti dettagli",
+      "eventLabel": "Evento",
+      "nameLabel": "Nome",
+      "addressLabel": "Indirizzo",
+      "amountLabel": "Quantità",
+      "paymentLabel": "Pagamento",
+      "dateLabel": "Data",
+      "startsAtLabel": "Inizia a",
+      "locationLabel": "Posizione",
+      "emailLabel": "E-mail",
+      "phoneNumberLbl": "Numero di telefono",
+      "smsLabel": "sms",
+      "recipientLabel": "Destinatario",
+      "textMsgLabel": "Messaggio testuale",
+      "composeSmsBtn": "Componi un messaggio di testo",
+      "addToCalendarBtn": "Aggiungi al calendario",
+      "callOrganizerBtn": "Chiama l'organizzatore",
+      "addLocationBtn": "Salva posizione su Maps",
+      "sendEmailBtn": "Invia una email",
+      "qrContent": "Link di pagamento"
+    },
+    "threat": {
+      "typeSafe": "Nessun contenuto non sicuro trovato.",
+      "typeNotSecure": "Non sicuro - Probabilmente rischioso",
+      "typeUnSafe": "Pericoloso - Evita questo sito",
+      "safeTypeDetail": "Le informazioni inviate o ricevute tramite il sito sono protette. Anche se il sito è contrassegnato come sicuro, fai sempre attenzione quando condividi informazioni private. Guarda la barra degli indirizzi per assicurarti di essere sul sito che desideri visitare.",
+      "unSafeTypeDetail": "Questo sito è stato contrassegnato come non sicuro. Visitare questo sito potrebbe indurti a fare qualcosa di pericoloso come installare software o rivelare le tue informazioni personali (ad esempio, password, numeri di telefono o carte di credito) o utilizzare il tuo dispositivo per fare cose che non intendi.",
+      "notSecureTypeDetail": "Questo sito non fornisce una connessione sicura. Qualcuno potrebbe essere in grado di vedere o modificare le informazioni inviate e ricevute tramite questo sito. Ti suggeriamo di non inserire alcuna informazione privata o personale in questa pagina. Se possibile, non utilizzare il sito.",
+      "typeErrorSiteNotFound": "Non riusciamo a raggiungere il sito web. Questa pagina non esiste o si è verificato un altro orribile errore. ",
+      "typeErrorFailure": "Stiamo lavorando per risolvere questo problema il prima possibile. Per favore riprova più tardi.",
+      "typeErrorNoConnection": "Nessuna connessione internet. Controlla le impostazioni di rete e riprova."
+    },
+    "modal": {
+      "safeDetails": "Le informazioni inviate o ricevute tramite il sito sono protette. Anche se vedi questo messaggio, fai sempre attenzione quando condividi informazioni private. Guarda la barra degli indirizzi per assicurarti di essere sul sito che desideri visitare.",
+      "notSecureDetails": "Questo sito non può fornire una connessione sicura. Qualcuno potrebbe essere in grado di vedere o modificare le informazioni inviate o ricevute tramite questo sito. Ti suggeriamo di non inserire alcuna informazione privata o personale in questa pagina. Se possibile, non utilizzare il sito.",
+      "unSafeDetails": "Visitare questo sito potrebbe indurti a fare qualcosa di pericoloso come installare software o rivelare le tue informazioni personali (ad esempio, password, numeri di telefono o carte di credito) o utilizzare il tuo computer per fare cose che non intendi."
+    },
+    "message": {
+      "lastUpdated": "Queste informazioni sono state aggiornate l'ultima volta il {{date}}.",
+      "siteSaftey": "La sicurezza del sito può cambiare nel tempo. Ricontrolla per aggiornamenti.",
+      "paymentDetails": "Link di pagamento",
+      "internetError": "Connessione Internet lenta o assente, controlla le impostazioni Internet.",
+      "internetErrorHead": "Ops"
+    },
+    "upi": {
+      "detailWithPaymentText": "Questo QR contiene un link per pagare INR {{amountToPay}} a {{merchantName}} con indirizzo VPA {{merchantId}}. Puoi utilizzare qualsiasi app di pagamento per inviare denaro, se lo desideri.",
+      "detailText": "Questo QR contiene un link per pagare {{merchantName}} con l'indirizzo VPA {{merchantId}}. Puoi utilizzare qualsiasi app di pagamento per inviare denaro, se lo desideri."
+    }
+  }
+}

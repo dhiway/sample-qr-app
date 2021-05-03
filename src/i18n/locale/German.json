@@ -1,0 +1,119 @@
+{
+  "translation": {
+    "app": {
+      "Scan": "Scan",
+      "Settings": "die Einstellungen",
+      "Activity": "Aktivität",
+      "seqrByDhiway": "SEQR von DHIWAY"
+    },
+    "activity": {
+      "noDataUseScan": "Sie haben anscheinend noch keine QR-Codes gescannt! Bitte scannen Sie einen QR-Code, um Einträge hier zu sehen",
+      "disabledMessage": "Sie haben die Aufzeichnung Ihrer Scan-Aktivität deaktiviert. Wenn Sie es aktivieren möchten, besuchen Sie bitte die Seite Einstellungen, um es wieder zu aktivieren. Die SEQR-App funktioniert ohne Aktivitätsaufzeichnung problemlos weiter. Klicken Sie unten auf Scannen, um die Kamera zum Scannen der Codes zu öffnen"
+    },
+    "onboard": {
+      "title0": "SEQR ist",
+      "subTitle0": "Immer frei",
+      "description0": "Willkommen zu einer sicheren Methode zum Scannen von QR-Codes! Mit SEQR können Sie jetzt sehen, was sich hinter dem QR verbirgt, über die Sicherheit des Codes informiert werden und ob er sicher oder riskant ist.",
+      "topContent1": "Absolute Sicherheit bei alltäglichen Transaktionen!",
+      "title1": "Wie geht das? ",
+      "subTitle1": "ARBEIT?",
+      "description1": "Mit SEQR können Sie alle Arten von QR-Codes scannen und lesen. Es führt mehrere Überprüfungen unter Verwendung von Informationen aus verschiedenen Online-Quellen durch, um potenzielle Sicherheitsrisiken zu identifizieren. Sie können fundierte Entscheidungen darüber treffen, ob Sie den Codes und Inhalten vertrauen oder nicht.",
+      "centerContent2": "Wenn Sie einen Phishing-Weblink finden, melden Sie ihn und helfen Sie uns, Transaktionen sicherer zu machen",
+      "title2": "Schließen Sie sich der Bewegung für a",
+      "subTitle2": "Sichereres Internet",
+      "description2": "Jedes Mal, wenn Sie auf falsch kategorisierte Informationen stoßen, melden Sie diese bitte, damit mehr Menschen online sicherer bleiben."
+    },
+    "permission": {
+      "proceedWithout": "Fahren Sie ohne Zugriff fort",
+      "seqrAsk": "SEQR benötigt Zugriff auf ",
+      "deny": "Verweigern",
+      "accessCamera": "Kamera",
+      "cameraReason": "QR-Codes scannen",
+      "accessStorage": "Lager,",
+      "storageReason": "hochgeladene QR-Code-Bilder zu lesen",
+      "accessLocation": "Ort",
+      "locationReason": "um Sie daran zu erinnern, wo ein QR-Code (in Aktivität) gescannt wurde",
+      "grant": "Berechtigungen erteilen"
+    },
+    "details": {
+      "btnWarning": "(Nicht sicher!)",
+      "btnRisky": "(Gefährlich!)",
+      "qrContentCopied": "Kopierter QR-Inhalt",
+      "translatedText": "Übersetzter Text"
+    },
+    "scan": {
+      "noCameraAccess": "Kein Kamerazugriff",
+      "noCameraAccessDetail": "Ohne Zugriff auf die Kamera kann SEQR keine QR-Codes scannen",
+      "timeout": "Auszeit. Keine gescannten QRs",
+      "timeoutText": "Wenn Sie in den letzten 30 Sekunden keine Codes gescannt haben, öffnen Sie die Registerkarte Scannen erneut, wenn Sie zum Scannen bereit sind. Wenn Sie die Kamera längere Zeit eingeschaltet lassen, kann der Akku entladen werden. Öffnen der Registerkarte Aktivität.",
+      "qrHint": "Suchen Sie einen Code zum Scannen"
+    },
+    "settings": {
+      "aboutSEQR": "SEQR wurde entwickelt, um alle Arten von QR-Codes zu scannen und zu lesen und unsichere Inhalte zu identifizieren, auf die Sie möglicherweise stoßen. Zusätzlich zur Verwendung von Informationen aus verschiedenen Online-Quellen werden mehrere Überprüfungen durchgeführt, um potenzielle Sicherheitsrisiken zu identifizieren. Sie können fundierte Entscheidungen darüber treffen, ob Sie den Codes und Inhalten vertrauen oder nicht.",
+      "safeAdvisory": "Sicheres Surfen",
+      "userAgreement": "Nutzungsbedingungen",
+      "privacyPolicy": "Datenschutz-Bestimmungen",
+      "aboutDhiway": "Über Dhiway",
+      "langChange": "Wähle deine Sprache",
+      "defaultScreenPick": "Aktivität als Standardbildschirm",
+      "recordActivity": "Aktivität aufzeichnen"
+    },
+    "lang": {
+      "English": "Englisch",
+      "Kannada": "Kannada",
+      "Malayalam": "Malayalam",
+      "Bengali": "Bengali",
+      "Hindi": "Hindi"
+    },
+    "common": {
+      "bookQR": "Buch ISBN",
+      "textQR": "Der gescannte Code enthält das folgende Detail",
+      "eventLabel": "Veranstaltung",
+      "nameLabel": "Name",
+      "addressLabel": "Adresse",
+      "amountLabel": "Menge",
+      "paymentLabel": "Zahlung",
+      "dateLabel": "Datum",
+      "startsAtLabel": "Startet um",
+      "locationLabel": "Ort",
+      "emailLabel": "Email",
+      "phoneNumberLbl": "Telefonnummer",
+      "smsLabel": "SMS",
+      "recipientLabel": "Empfänger",
+      "textMsgLabel": "Textnachricht",
+      "composeSmsBtn": "Textnachricht verfassen",
+      "addToCalendarBtn": "Zum Kalender hinzufügen",
+      "callOrganizerBtn": "Organisator anrufen",
+      "addLocationBtn": "Speicherort in Karten speichern",
+      "sendEmailBtn": "E-Mail senden",
+      "qrContent": "Zahlungslink"
+    },
+    "threat": {
+      "typeSafe": "Kein unsicherer Inhalt gefunden.",
+      "typeNotSecure": "Nicht sicher - wahrscheinlich riskant",
+      "typeUnSafe": "Gefährlich - Vermeiden Sie diese Seite",
+      "safeTypeDetail": "Informationen, die Sie über die Website senden oder empfangen, sind sicher. Auch wenn die Site als sicher gekennzeichnet ist, sollten Sie beim Teilen privater Informationen immer vorsichtig sein. Überprüfen Sie anhand der Adressleiste, ob Sie sich auf der Website befinden, die Sie besuchen möchten.",
+      "unSafeTypeDetail": "Diese Seite wurde als unsicher markiert. Der Besuch dieser Website kann Sie dazu verleiten, etwas Gefährliches zu tun, z. B. Software zu installieren oder Ihre persönlichen Daten (z. B. Passwörter, Telefonnummern oder Kreditkarten) preiszugeben, oder Ihr Gerät verwenden, um Dinge zu tun, die Sie nicht beabsichtigen.",
+      "notSecureTypeDetail": "Diese Site bietet keine sichere Verbindung. Möglicherweise kann jemand die Informationen sehen oder ändern, die Sie über diese Site senden und empfangen. Wir empfehlen Ihnen, auf dieser Seite keine privaten oder persönlichen Daten einzugeben. Verwenden Sie die Website nach Möglichkeit nicht.",
+      "typeErrorSiteNotFound": "Wir können die Website anscheinend nicht erreichen. Diese Seite existiert nicht oder es ist ein anderer schrecklicher Fehler aufgetreten. ",
+      "typeErrorFailure": "Wir arbeiten daran, dies so schnell wie möglich zu beheben. Bitte versuchen Sie es später noch einmal.",
+      "typeErrorNoConnection": "Keine Internetverbindung. Überprüfen Sie Ihre Netzwerkeinstellungen und versuchen Sie es erneut."
+    },
+    "modal": {
+      "safeDetails": "Informationen, die Sie über die Website senden oder erhalten, sind sicher. Auch wenn Sie diese Meldung sehen, seien Sie beim Teilen privater Informationen immer vorsichtig. Überprüfen Sie anhand der Adressleiste, ob Sie sich auf der Website befinden, die Sie besuchen möchten.",
+      "notSecureDetails": "Diese Site kann keine sichere Verbindung bereitstellen. Möglicherweise kann jemand die Informationen anzeigen oder ändern, die Sie über diese Website senden oder abrufen. Wir empfehlen Ihnen, auf dieser Seite keine privaten oder persönlichen Daten einzugeben. Verwenden Sie die Website nach Möglichkeit nicht.",
+      "unSafeDetails": "Der Besuch dieser Website kann Sie dazu verleiten, etwas Gefährliches zu tun, z. B. Software zu installieren oder Ihre persönlichen Daten (z. B. Passwörter, Telefonnummern oder Kreditkarten) preiszugeben, oder Ihren Computer verwenden, um Dinge zu tun, die Sie nicht beabsichtigen."
+    },
+    "message": {
+      "lastUpdated": "Diese Informationen wurden zuletzt am {{Datum}} aktualisiert.",
+      "siteSaftey": "Die Sicherheit vor Ort kann sich im Laufe der Zeit ändern. Suchen Sie erneut nach Updates.",
+      "paymentDetails": "Zahlungslink",
+      "internetError": "Langsame oder keine Internetverbindung. Bitte überprüfen Sie Ihre Interneteinstellungen.",
+      "internetErrorHead": "Hoppla"
+    },
+    "upi": {
+      "detailWithPaymentText": "Dieser QR enthält einen Link zum Bezahlen von INR {{amountToPay}} an {{Händlername}} mit der VPA-Adresse {{Händler-ID}}. Sie können beliebige Zahlungs-Apps verwenden, um das Geld zu senden, wenn Sie möchten.",
+      "detailText": "Dieser QR enthält einen Link zum Bezahlen von {{MerchantName}} mit der VPA-Adresse {{MerchantId}}. Sie können beliebige Zahlungs-Apps verwenden, um das Geld zu senden, wenn Sie möchten."
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "translation": {
+    "app": {
+      "Scan": "Scan",
+      "Settings": "Settings",
+      "Activity": "Activity",
+      "seqrByDhiway": "SEQR by DHIWAY"
+    },
+
+    "activity": {
+      "noDataUseScan": "Looks like you have not scanned any QR codes yet! Please scan a QR code to see entries here",
+      "disabledMessage": "You have disabled recording of your scan activity. If you wish to enable it, please visit Settings page to re-enable it. SEQR App will continue to work without any problem without activity recording. Click on Scan below to open camera to scan the codes"
+    },
+
+    "onboard": {
+      "title0": "SEQR is",
+      "subTitle0": "Always FREE",
+      "description0": "Welcome to a safe way to scan QR codes! With SEQR you can now see what is behind the QR, be informed about the security of the code, and whether it is safe or risky.",
+
+      "topContent1": "Absolute Certainty in everyday transactions!",
+      "title1": "How does it ",
+      "subTitle1": "WORK?",
+      "description1": "With SEQR, you can scan and read all kinds of QR Codes. It performs several checks using information from various online sources to identify potential security risks. It enables you to make informed decisions about whether or not to trust the codes and content.",
+
+      "centerContent2": "If you find a phishing web link, report it and help us make transactions safer",
+      "title2": "Join the movement for a",
+      "subTitle2": "Safer Internet",
+      "description2": "Each time you come across an incorrectly categorized information, please report it to help more people stay safer online."
+    },
+
+    "permission": {
+      "proceedWithout": "Proceeding without access",
+      "seqrAsk": "SEQR needs access to ",
+      "deny": "Deny",
+      "accessCamera": "Camera",
+      "cameraReason": "to scan QR Codes",
+      "accessStorage": "Storage,",
+      "storageReason": "to read uploaded QR Code images",
+      "accessLocation": "Location",
+      "locationReason": "to remind you of where a QR Code (in activity) was scanned",
+      "grant": "Grant permissions"
+    },
+
+    "details": {
+      "btnWarning": "(Not Secure!)",
+      "btnRisky": "(Dangerous!)",
+      "qrContentCopied": "Copied QR Content",
+      "translatedText": "Translated Text",
+      "feedbackSuccess": "You have successfully submitted feedback. Thank You",
+      "feedbackFailure": "Failed to submit feedback at this time. Please try again in sometime",
+      "feedbackEmpty": "Oops! Your feedback didn't get through ... Please try again!",
+      "feedbackPlaceholder": "What can we improvise"
+    },
+
+    "scan": {
+      "noCameraAccess": "No Camera Access",
+      "noCameraAccessDetail": "Without access to the Camera, SEQR can't scan QR Codes",
+      "timeout": "Timeout. No QRs Scanned",
+      "timeoutText": "Not scanned any codes in the last 30 seconds, reopen Scan tab when you are ready to scan. Keeping the camera on for long may drain battery. Opening the Activity tab.",
+      "qrHint": "Find a code to scan"
+    },
+
+    "settings": {
+      "aboutSEQR": "SEQR is designed to scan and read all kinds of QR Codes and identify unsafe content that you may come across. It performs several checks in addition to using information from various online sources to identify potential security risks. It enables you to make informed decisions about whether or not to trust the codes and content.",
+      "safeAdvisory": "Safe Browsing",
+      "userAgreement": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "aboutDhiway": "About Dhiway",
+      "langChange": "Select your language",
+      "defaultScreenPick": "Activity as default screen",
+      "recordActivity": "Record Activity",
+      "language": "Language",
+      "inActivityAlert": "Scanner Timeout"
+    },
+
+    "lang": {
+      "English": "English",
+      "Kannada": "Kannada",
+      "Malayalam": "Malayalam",
+      "Bengali": "Bengali",
+      "Hindi": "Hindi",
+      "Tamil": "Tamil",
+      "Telugu": "Telugu"
+    },
+
+    "common": {
+      "bookQR": "Book ISBN",
+      "textQR": "The code you scanned contains the following detail",
+      "eventLabel": "Event",
+      "nameLabel": "Name",
+      "addressLabel": "Address",
+      "amountLabel": "Amount",
+      "paymentLabel": "Payment",
+      "dateLabel": "Date",
+      "startsAtLabel": "Starts at",
+      "locationLabel": "Location",
+      "emailLabel": "Email",
+      "phoneNumberLbl": "Phone number",
+      "smsLabel": "SMS",
+      "recipientLabel": "Recipient",
+      "textMsgLabel": "Text message",
+      "composeSmsBtn": "Compose text message",
+      "addToCalendarBtn": "Add to Calendar",
+      "callOrganizerBtn": "Call Organizer",
+      "addLocationBtn": "Save Location to Maps",
+      "sendEmailBtn": "Send Email",
+      "qrContent": "Payment Link",
+      "searchHint": "Search",
+      "continueLabel": "Select and Continue",
+      "submitLabel": "SUBMIT",
+      "moreInformation": "Check transaction details"
+    },
+    "hashMarkInformation": {
+      "CreatedBy": "Created by",
+      "IssuedBy": "Issued by",
+      "CreatedAt": "Created On",
+      "HashLabel": "Hash",
+      "Transaction": "Transaction",
+      "hashMarkPrivate": "This is the private #MARK, you must have the necessary rights to scan and view details in this #MARK,for more information please visit dhiway.com or contact us by mail,using feedback@dhiway.com"
+    },
+
+    "threat": {
+      "typeSafe": "No Unsafe Content Found.",
+      "typeNotSecure": "Not Secure - Probably Risky",
+      "typeUnSafe": "Dangerous - Avoid this Site",
+
+      "safeTypeDetail": "Information you send or receive through the site is secure. Even if the site is flagged safe, always be careful when sharing private information. Look at the address bar to make sure you are on the site you want to visit.",
+      "unSafeTypeDetail": "This site has been flagged as unsafe. Visiting this site could trick you into doing something dangerous like installing software or revealing your personal information (for example, passwords, phone numbers, or credit cards) or use your device to do things that you do not intend.",
+      "notSecureTypeDetail": "This site does not provide a secure connection. Someone might be able to see or change the information you send and receive through this site. We suggest you do not enter any private or personal information on this page. If possible, do not use the site.",
+
+      "typeErrorSiteNotFound": "We can't seem to reach the web site. This page doesn't exist or some other horrible error has occurred. ",
+      "typeErrorFailure": "We're working on getting this fixed as soon as we can. Please try again later.",
+      "typeErrorNoConnection": "No Internet Connection. Check your network settings and try again.",
+      "hashCodeText": "100% genuine -#MARK Verified",
+      "hashCodeDescription": "Information you send or get through the site is secure. Even if you see this message,always be careful when sharing private information. Look at the address bar to make sure you're on the site you want to visit."
+    },
+
+    "modal": {
+      "safeDetails": "Information you send or get through the site is secure. Even if you see this message,always be careful when sharing private information. Look at the address bar to make sure you're on the site you want to visit.",
+      "notSecureDetails": "This site can't provide a secure connection. Someone might be able to see or change the information you send or get through this site. We suggest you don't enter any private or personal information on this page. If possible, don't use the site.",
+      "unSafeDetails": "Visiting this site could trick you into doing something dangerous like installing software or revealing your personal information (for example, passwords, phone numbers, or credit cards) or use your computer to do things that you do not intend.",
+      "blockChainContent": "BLOCKCHAIN VERIFIED",
+      "notVerified": "# NOT VERIFIED"
+    },
+
+    "message": {
+      "lastUpdated": "This info was last updated on {{date}}.",
+      "siteSaftey": "Site safety can change over time. Check back for updates.",
+      "paymentDetails": "Payment Link",
+      "internetError": "Slow or no Internet connection, Please check your internet settings.",
+      "internetErrorHead": "Whoops"
+    },
+
+    "upi": {
+      "detailWithPaymentText": "This QR contains a link to pay INR {{amountToPay}} to {{merchantName}} with VPA address {{merchantId}}. You can use any payment apps to send the money if you wish to.",
+      "detailText": "This QR contains a link to pay {{merchantName}} with VPA address {{merchantId}}. You can use any payment apps to send the money if you wish to.",
+      "linkText": "Payment Link"
+    }
+  }
+}

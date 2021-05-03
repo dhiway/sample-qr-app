@@ -1,0 +1,119 @@
+{
+  "translation": {
+    "app": {
+      "Scan": "주사",
+      "Settings": "설정",
+      "Activity": "활동",
+      "seqrByDhiway": "DHIWAY의 SEQR"
+    },
+    "activity": {
+      "noDataUseScan": "아직 QR 코드를 스캔하지 않은 것 같습니다! 여기에서 항목을 보려면 QR 코드를 스캔하세요.",
+      "disabledMessage": "스캔 활동 기록을 비활성화했습니다. 활성화하려면 설정 페이지를 방문하여 다시 활성화하십시오. SEQR App은 활동 기록 없이도 문제없이 계속 작동합니다. 아래 스캔을 클릭하여 카메라를 열어 코드를 스캔하세요."
+    },
+    "onboard": {
+      "title0": "SEQR은",
+      "subTitle0": "항상 무료",
+      "description0": "QR 코드를 스캔하는 안전한 방법에 오신 것을 환영합니다! SEQR을 사용하면 QR 뒤에 무엇이 있는지 확인하고 코드의 보안에 대한 정보를받을 수 있으며 코드가 안전한지 위험한지 알 수 있습니다.",
+      "topContent1": "일상적인 거래에서 절대적인 확실성!",
+      "title1": "어떻게 ",
+      "subTitle1": "작업?",
+      "description1": "SEQR을 사용하면 모든 종류의 QR 코드를 스캔하고 읽을 수 있습니다. 다양한 온라인 소스의 정보를 사용하여 몇 가지 검사를 수행하여 잠재적 인 보안 위험을 식별합니다. 이를 통해 코드와 콘텐츠를 신뢰할지 여부에 대해 정보에 입각 한 결정을 내릴 수 있습니다.",
+      "centerContent2": "피싱 웹 링크를 찾으면 신고하고 거래를보다 안전하게 할 수 있도록 도와주세요.",
+      "title2": "운동에 동참하세요",
+      "subTitle2": "더 안전한 인터넷",
+      "description2": "잘못 분류 된 정보를 발견 할 때마다 더 많은 사람들이 온라인에서 안전하게 지낼 수 있도록 신고 해주세요."
+    },
+    "permission": {
+      "proceedWithout": "액세스없이 진행",
+      "seqrAsk": "SEQR에 대한 액세스 권한이 필요합니다. ",
+      "deny": "거부",
+      "accessCamera": "카메라",
+      "cameraReason": "QR 코드를 스캔하려면",
+      "accessStorage": "저장,",
+      "storageReason": "업로드 된 QR 코드 이미지 읽기",
+      "accessLocation": "위치",
+      "locationReason": "QR 코드 (활동 중)가 스캔 된 위치를 알려줍니다.",
+      "grant": "권한 부여"
+    },
+    "details": {
+      "btnWarning": "(안전하지 않습니다!)",
+      "btnRisky": "(위험한!)",
+      "qrContentCopied": "복사 된 QR 콘텐츠",
+      "translatedText": "번역 된 텍스트"
+    },
+    "scan": {
+      "noCameraAccess": "카메라 액세스 없음",
+      "noCameraAccessDetail": "카메라에 액세스하지 않으면 SEQR이 QR 코드를 스캔 할 수 없습니다.",
+      "timeout": "타임 아웃. 스캔 된 QR 없음",
+      "timeoutText": "지난 30 초 동안 코드를 스캔하지 않았습니다. 스캔 할 준비가되면 스캔 탭을 다시여십시오. 카메라를 오랫동안 켜두면 배터리가 소모 될 수 있습니다. 활동 탭 열기.",
+      "qrHint": "스캔 할 코드 찾기"
+    },
+    "settings": {
+      "aboutSEQR": "SEQR은 모든 종류의 QR 코드를 스캔 및 판독하고 사용자가 마주 칠 수있는 안전하지 않은 콘텐츠를 식별하도록 설계되었습니다. 잠재적 인 보안 위험을 식별하기 위해 다양한 온라인 소스의 정보를 사용하는 것 외에도 여러 검사를 수행합니다. 이를 통해 코드와 콘텐츠를 신뢰할지 여부에 대해 정보에 입각 한 결정을 내릴 수 있습니다.",
+      "safeAdvisory": "세이프 브라우징",
+      "userAgreement": "서비스 약관",
+      "privacyPolicy": "개인 정보 정책",
+      "aboutDhiway": "Dhiway 정보",
+      "langChange": "언어를 선택하세요",
+      "defaultScreenPick": "기본 화면으로 활동",
+      "recordActivity": "활동 기록"
+    },
+    "lang": {
+      "English": "영어",
+      "Kannada": "칸나다어",
+      "Malayalam": "말라 얄 람어",
+      "Bengali": "벵골 사람",
+      "Hindi": "힌디 어"
+    },
+    "common": {
+      "bookQR": "책 ISBN",
+      "textQR": "스캔 한 코드에는 다음 세부 정보가 포함되어 있습니다.",
+      "eventLabel": "행사",
+      "nameLabel": "이름",
+      "addressLabel": "주소",
+      "amountLabel": "양",
+      "paymentLabel": "지불",
+      "dateLabel": "데이트",
+      "startsAtLabel": "시작",
+      "locationLabel": "위치",
+      "emailLabel": "이메일",
+      "phoneNumberLbl": "전화 번호",
+      "smsLabel": "SMS",
+      "recipientLabel": "받는 사람",
+      "textMsgLabel": "문자 메세지",
+      "composeSmsBtn": "문자 메시지 작성",
+      "addToCalendarBtn": "캘린더에 추가",
+      "callOrganizerBtn": "전화 주최자",
+      "addLocationBtn": "지도에 위치 저장",
+      "sendEmailBtn": "이메일을 보내",
+      "qrContent": "결제 링크"
+    },
+    "threat": {
+      "typeSafe": "안전하지 않은 콘텐츠가 없습니다.",
+      "typeNotSecure": "안전하지 않음-위험 할 수 있음",
+      "typeUnSafe": "위험-이 사이트를 피하십시오",
+      "safeTypeDetail": "사이트를 통해 보내거나받는 정보는 안전합니다. 사이트가 안전하다고 표시 되더라도 개인 정보를 공유 할 때는 항상주의하십시오. 주소 표시 줄을보고 방문하려는 사이트에 있는지 확인하십시오.",
+      "unSafeTypeDetail": "이 사이트는 안전하지 않은 것으로 표시되었습니다. 이 사이트를 방문하면 소프트웨어를 설치하거나 개인 정보 (예 : 암호, 전화 번호 또는 신용 카드)를 공개하는 등 위험한 작업을 수행하거나 장치를 사용하여 의도하지 않은 작업을 수행하도록 속일 수 있습니다.",
+      "notSecureTypeDetail": "이 사이트는 보안 연결을 제공하지 않습니다. 누군가가이 사이트를 통해 보내고받는 정보를 보거나 변경할 수 있습니다. 이 페이지에 개인 정보 또는 개인 정보를 입력하지 않는 것이 좋습니다. 가능하면 사이트를 사용하지 마십시오.",
+      "typeErrorSiteNotFound": "웹 사이트에 접속할 수 없습니다. 이 페이지가 존재하지 않거나 다른 끔찍한 오류가 발생했습니다. ",
+      "typeErrorFailure": "최대한 빨리이 문제를 해결하기 위해 노력하고 있습니다. 나중에 다시 시도하세요.",
+      "typeErrorNoConnection": "인터넷에 연결되지 않음. 네트워크 설정을 확인하고 다시 시도하십시오."
+    },
+    "modal": {
+      "safeDetails": "사이트를 통해 보내거나받는 정보는 안전합니다. 이 메시지가 표시 되더라도 개인 정보를 공유 할 때는 항상주의하세요. 주소 표시 줄을보고 방문하려는 사이트에 있는지 확인하십시오.",
+      "notSecureDetails": "이 사이트는 보안 연결을 제공 할 수 없습니다. 누군가가이 사이트를 통해 보내거나받는 정보를 보거나 변경할 수 있습니다. 이 페이지에 개인 정보 나 개인 정보를 입력하지 않는 것이 좋습니다. 가능하면 사이트를 사용하지 마십시오.",
+      "unSafeDetails": "이 사이트를 방문하면 소프트웨어를 설치하거나 개인 정보 (예 : 암호, 전화 번호 또는 신용 카드)를 공개하는 것과 같은 위험한 작업을 수행하거나 컴퓨터를 사용하여 의도하지 않은 작업을 수행하도록 속일 수 있습니다."
+    },
+    "message": {
+      "lastUpdated": "이 정보는 {{date}}에 마지막으로 업데이트되었습니다.",
+      "siteSaftey": "사이트 안전은 시간이 지남에 따라 변경 될 수 있습니다. 업데이트를 다시 확인하십시오.",
+      "paymentDetails": "결제 링크",
+      "internetError": "인터넷 연결이 느리거나 연결되지 않았습니다. 인터넷 설정을 확인하십시오.",
+      "internetErrorHead": "웁스"
+    },
+    "upi": {
+      "detailWithPaymentText": "이 QR에는 VPA 주소 {{merchantId}}로 {{merchantName}}에 INR {{amountToPay}}을 지불 할 수있는 링크가 포함되어 있습니다. 원하는 경우 모든 결제 앱을 사용하여 송금 할 수 있습니다.",
+      "detailText": "이 QR에는 VPA 주소 {{merchantId}}로 {{merchantName}}에 지불 할 수있는 링크가 포함되어 있습니다. 원하는 경우 모든 결제 앱을 사용하여 송금 할 수 있습니다."
+    }
+  }
+}

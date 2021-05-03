@@ -1,0 +1,119 @@
+{
+  "translation": {
+    "app": {
+      "Scan": "Quét",
+      "Settings": "Cài đặt",
+      "Activity": "Hoạt động",
+      "seqrByDhiway": "SEQR bởi DHIWAY"
+    },
+    "activity": {
+      "noDataUseScan": "Có vẻ như bạn chưa quét bất kỳ mã QR nào! Vui lòng quét mã QR để xem các mục nhập ở đây",
+      "disabledMessage": "Bạn đã tắt ghi hoạt động quét của mình. Nếu bạn muốn kích hoạt nó, vui lòng truy cập trang Cài đặt để bật lại. Ứng dụng SEQR sẽ tiếp tục hoạt động mà không có bất kỳ sự cố nào mà không cần ghi lại hoạt động. Nhấp vào Quét bên dưới để mở máy ảnh để quét mã"
+    },
+    "onboard": {
+      "title0": "SEQR là",
+      "subTitle0": "Luôn luôn miễn phí",
+      "description0": "Chào mừng bạn đến với một cách an toàn để quét mã QR! Với SEQR, giờ đây bạn có thể thấy những gì đằng sau mã QR, được thông báo về tính bảo mật của mã và liệu nó an toàn hay rủi ro.",
+      "topContent1": "Độ chắc chắn tuyệt đối trong các giao dịch hàng ngày!",
+      "title1": "Nó như thế nào ",
+      "subTitle1": "CÔNG VIỆC?",
+      "description1": "Với SEQR, bạn có thể quét và đọc tất cả các loại Mã QR. Nó thực hiện một số kiểm tra bằng cách sử dụng thông tin từ các nguồn trực tuyến khác nhau để xác định các rủi ro bảo mật tiềm ẩn. Nó cho phép bạn đưa ra quyết định sáng suốt về việc có nên tin tưởng các mã và nội dung hay không.",
+      "centerContent2": "Nếu bạn tìm thấy một liên kết web lừa đảo, hãy báo cáo và giúp chúng tôi thực hiện các giao dịch an toàn hơn",
+      "title2": "Tham gia phong trào vì một",
+      "subTitle2": "Internet an toàn hơn",
+      "description2": "Mỗi khi bạn gặp thông tin được phân loại không chính xác, vui lòng báo cáo thông tin đó để giúp nhiều người trực tuyến an toàn hơn."
+    },
+    "permission": {
+      "proceedWithout": "Tiếp tục mà không có quyền truy cập",
+      "seqrAsk": "SEQR cần quyền truy cập vào ",
+      "deny": "Phủ nhận",
+      "accessCamera": "Máy ảnh",
+      "cameraReason": "để quét mã QR",
+      "accessStorage": "Lưu trữ,",
+      "storageReason": "để đọc hình ảnh mã QR đã tải lên",
+      "accessLocation": "Vị trí",
+      "locationReason": "để nhắc bạn về nơi mã QR (đang hoạt động) được quét",
+      "grant": "Cấp quyền"
+    },
+    "details": {
+      "btnWarning": "(Không an toàn!)",
+      "btnRisky": "(Nguy hiểm!)",
+      "qrContentCopied": "Nội dung QR được sao chép",
+      "translatedText": "Văn bản đã Dịch"
+    },
+    "scan": {
+      "noCameraAccess": "Không có quyền truy cập máy ảnh",
+      "noCameraAccessDetail": "Nếu không có quyền truy cập vào Máy ảnh, SEQR không thể quét mã QR",
+      "timeout": "Hết giờ. Không có QR được quét",
+      "timeoutText": "Chưa quét bất kỳ mã nào trong 30 giây qua, hãy mở lại tab Quét khi bạn sẵn sàng quét. Để máy ảnh bật lâu có thể làm hao pin. Mở tab Hoạt động.",
+      "qrHint": "Tìm mã để quét"
+    },
+    "settings": {
+      "aboutSEQR": "SEQR được thiết kế để quét và đọc tất cả các loại Mã QR và xác định nội dung không an toàn mà bạn có thể bắt gặp. Nó thực hiện một số kiểm tra ngoài việc sử dụng thông tin từ các nguồn trực tuyến khác nhau để xác định các rủi ro bảo mật tiềm ẩn. Nó cho phép bạn đưa ra quyết định sáng suốt về việc có nên tin tưởng các mã và nội dung hay không.",
+      "safeAdvisory": "Duyệt web an toàn",
+      "userAgreement": "Điều khoản dịch vụ",
+      "privacyPolicy": "Chính sách bảo mật",
+      "aboutDhiway": "Về Dhiway",
+      "langChange": "chọn ngôn ngữ của bạn",
+      "defaultScreenPick": "Hoạt động như màn hình mặc định",
+      "recordActivity": "Ghi lại Hoạt động"
+    },
+    "lang": {
+      "English": "Tiếng Anh",
+      "Kannada": "Tiếng Kannada",
+      "Malayalam": "Malayalam",
+      "Bengali": "Tiếng Bengali",
+      "Hindi": "Tiếng Hindi"
+    },
+    "common": {
+      "bookQR": "ISBN của sách",
+      "textQR": "Mã bạn quét có chứa chi tiết sau",
+      "eventLabel": "Biến cố",
+      "nameLabel": "Tên",
+      "addressLabel": "Địa chỉ",
+      "amountLabel": "Số tiền",
+      "paymentLabel": "Thanh toán",
+      "dateLabel": "Ngày",
+      "startsAtLabel": "Bắt đầu lúc",
+      "locationLabel": "Vị trí",
+      "emailLabel": "E-mail",
+      "phoneNumberLbl": "Số điện thoại",
+      "smsLabel": "tin nhắn",
+      "recipientLabel": "Người nhận",
+      "textMsgLabel": "Tin nhắn văn bản",
+      "composeSmsBtn": "Soạn tin nhắn văn bản",
+      "addToCalendarBtn": "Thêm vào Lịch",
+      "callOrganizerBtn": "Người tổ chức cuộc gọi",
+      "addLocationBtn": "Lưu Vị trí vào Bản đồ",
+      "sendEmailBtn": "Gửi email",
+      "qrContent": "Liên kết thanh toán"
+    },
+    "threat": {
+      "typeSafe": "Không tìm thấy nội dung không an toàn.",
+      "typeNotSecure": "Không an toàn - Có thể rủi ro",
+      "typeUnSafe": "Nguy hiểm - Tránh trang web này",
+      "safeTypeDetail": "Thông tin bạn gửi hoặc nhận qua trang web được bảo mật. Ngay cả khi trang web được gắn cờ là an toàn, hãy luôn cẩn thận khi chia sẻ thông tin riêng tư. Nhìn vào thanh địa chỉ để đảm bảo rằng bạn đang ở trên trang web bạn muốn truy cập.",
+      "unSafeTypeDetail": "Trang web này đã bị gắn cờ là không an toàn. Truy cập trang web này có thể lừa bạn làm điều gì đó nguy hiểm như cài đặt phần mềm hoặc tiết lộ thông tin cá nhân của bạn (ví dụ: mật khẩu, số điện thoại hoặc thẻ tín dụng) hoặc sử dụng thiết bị của bạn để làm những việc bạn không có ý định.",
+      "notSecureTypeDetail": "Trang web này không cung cấp kết nối an toàn. Ai đó có thể xem hoặc thay đổi thông tin bạn gửi và nhận qua trang web này. Chúng tôi đề nghị bạn không nhập bất kỳ thông tin cá nhân hoặc cá nhân nào trên trang này. Nếu có thể, không sử dụng trang web.",
+      "typeErrorSiteNotFound": "Chúng tôi dường như không thể truy cập trang web. Trang này không tồn tại hoặc một số lỗi khủng khiếp khác đã xảy ra. ",
+      "typeErrorFailure": "Chúng tôi đang cố gắng khắc phục sự cố này sớm nhất có thể. Vui lòng thử lại sau.",
+      "typeErrorNoConnection": "Không có kết nối Internet. Kiểm tra cài đặt mạng của bạn và thử lại."
+    },
+    "modal": {
+      "safeDetails": "Thông tin bạn gửi hoặc lấy qua trang web được bảo mật. Ngay cả khi bạn nhìn thấy thông báo này, hãy luôn cẩn thận khi chia sẻ thông tin riêng tư. Nhìn vào thanh địa chỉ để đảm bảo rằng bạn đang ở trên trang web bạn muốn truy cập.",
+      "notSecureDetails": "Trang web này không thể cung cấp kết nối an toàn. Ai đó có thể xem hoặc thay đổi thông tin bạn gửi hoặc lấy thông qua trang web này. Chúng tôi khuyên bạn không nhập bất kỳ thông tin cá nhân hoặc riêng tư nào trên trang này. Nếu có thể, đừng sử dụng trang web.",
+      "unSafeDetails": "Truy cập trang web này có thể lừa bạn làm điều gì đó nguy hiểm như cài đặt phần mềm hoặc tiết lộ thông tin cá nhân của bạn (ví dụ: mật khẩu, số điện thoại hoặc thẻ tín dụng) hoặc sử dụng máy tính của bạn để làm những việc mà bạn không có ý định."
+    },
+    "message": {
+      "lastUpdated": "Thông tin này được cập nhật lần cuối vào {{date}}.",
+      "siteSaftey": "Sự an toàn của trang web có thể thay đổi theo thời gian. Kiểm tra lại các bản cập nhật.",
+      "paymentDetails": "Liên kết thanh toán",
+      "internetError": "Kết nối Internet chậm hoặc không có, Vui lòng kiểm tra cài đặt internet của bạn.",
+      "internetErrorHead": "Rất tiếc"
+    },
+    "upi": {
+      "detailWithPaymentText": "QR này chứa một liên kết để thanh toán INR {{amountToPay}} cho {{merchantName}} bằng địa chỉ VPA {{merchantId}}. Bạn có thể sử dụng bất kỳ ứng dụng thanh toán nào để gửi tiền nếu muốn.",
+      "detailText": "QR này chứa liên kết thanh toán {{merchantName}} bằng địa chỉ VPA {{merchantId}}. Bạn có thể sử dụng bất kỳ ứng dụng thanh toán nào để gửi tiền nếu muốn."
+    }
+  }
+}

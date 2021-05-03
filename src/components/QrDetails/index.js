@@ -1,0 +1,706 @@
+import React, { useRef, useState, useEffect, useContext } from "react";
+import {
+  View,
+  StatusBar,
+  Linking,
+  SafeAreaView,
+  Alert,
+  ActivityIndicator,
+  TouchableOpacity,
+  BackHandler,
+  Platform,
+  Image,
+  TextInput,
+} from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
+import { AppContext } from "../../providers/AppContext";
+import SnackBar from "react-native-snackbar";
+import urlRegex from "url-regex";
+import NoInternet from "../../shared/NoInternet";
+import CommanStyles from "../../utils/CommanStyles";
+import styles from "./styles";
+import Header from "../../shared/Header";
+import HistoryCards from "../../shared/HistoryCards";
+import { recordActivity as storeActivity } from "../../lib/datastore";
+import Clipboard from "@react-native-community/clipboard";
+import { WebView } from "react-native-webview";
+import { version } from "../../../package.json";
+import {
+  useFocusEffected,
+  useIsFocused,
+  useFocusEffect,
+} from "@react-navigation/native";
+import commanStyles from "../../utils/CommanStyles";
+import i18n from "../../lib/I18n";
+import url from "url";
+import path from "path";
+import axios from "axios";
+import dayjs from "dayjs";
+import customParseFormat from "dayjs/plugin/customParseFormat";
+import DetailsCard from "../../shared/DetailsCard";
+import PhoneInfo from "../../shared/PhoneInfo";
+import EmailInfo from "../../shared/EmailInfo";
+import GeoLocationInfo from "../../shared/GeoLocationInfo";
+import UpiPaymentInfo from "../../shared/UpiPaymentInfo";
+import TextInfo from "../../shared/TextInfo";
+import BookInfo from "../../shared/BookInfo";
+import CalenderInfo from "../../shared/CalenderInfo";
+import VCardInfo from "../../shared/VCardInfo";
+import WifiInfo from "../../shared/Wifi";
+import SmsInfo from "../../shared/SmsInfo";
+import ModalCard from "../../shared/Modal";
+import LinearGradient from "react-native-linear-gradient";
+import NetInfo from "@react-native-community/netinfo";
+import Text from "../../shared/Text";
+import HashMarkInfo from "../../shared/HashMarkInfo";
+
+import { decodeQR } from "./helpers.js";
+
+let trustedGradient = ["#1EA15D", "#1ea15da6", "#fff"];
+let riskGradient = ["#FF4343", "#ff4343a6", "#fff"];
+let warningGradient = ["#FE9B1E", "#fe9b1ec2", "#fff"];
+let hashMarkGradient = ["#00CCFF", "#87CEEB", "#fff"];
+let upiGradient = ["#594191", "#594191b5", "#5941917d"];
+let emptyGradient = ["#F5F5F5", "#F5F5F5", "#F5F5F5"];
+
+const QrDetails = ({ navigation, route }) => {
+  const isFocused = useIsFocused();
+  const data = route.params.data;
+  const newScan = route.params.newScan;
+  const timeTaken = route.params.timeTaken;
+  const redirectedRoute = route.params.redirectedRoute;
+  const lat = route.params.lat;
+  const lng = route.params.lng;
+  const mlkitResponse = route.params.mlkitResponse;
+  const qrImage = route.params.qrImage;
+  const storedAnalysis = route.params.analysis;
+  const storedTitle = route.params.baseLink;
+  const storedType = route.params.type;
+
+  /* TODO use proper device check */
+  const isAndroid = Platform.OS === "android";
+
+  const [buttonText, setButtonText] = useState("");
+  const [buttonColor, setButtonColor] = useState("#cccccc");
+
+  const [decode, setDecode] = useState({
+    loading: true,
+    title: "",
+  });
+
+  const [type, setType] = useState(null);
+  const [trackUrls, setTrackUrls] = useState([]);
+  const [translate, setTranslate] = useState();
+  const [vcardData, setVcardData] = useState();
+  const [wifiData, setWifiData] = useState();
+  const [smsData, setSmsData] = useState();
+  const [eventData, setEventData] = useState();
+
+  const [isVerified, setVerified] = useState(false);
+  const [openUrl, setOpenUrl] = useState();
+
+  const {
+    setChangeToggle,
+    isTabFocused,
+    isActivityDefault,
+    setEnabled,
+    recordActivity,
+    lang,
+    authenticateToken,
+  } = useContext(AppContext);
+  const [modalVisible, setModalVisable] = useState(false);
+
+  function gotoDetailView() {
+    navigation.navigate({
+      name: "TechDetails",
+      params: {
+        qrData: data,
+        mlkit: mlkitResponse,
+        analysis: {
+          safe: decode.safe,
+          hasThreat: decode.hasThreat,
+          redirect: decode.fwdurl,
+          canOpen: decode.canOpen,
+          threatType: decode.threatType,
+          certificate: decode.certDetail,
+          networkError: decode.networkFail,
+          error: decode.error,
+        },
+      },
+    });
+  }
+
+  function parseMlKitData(t, dt, response) {
+    // console.log("Type of the data",t,response);
+    setType(t);
+    /* If this function returns false, further processing of QR happens */
+    if (t === "URL" || t === "TEXT") {
+      return false;
+    }
+    let d = { ...decode };
+    d.loading = false;
+    if (t === "SMS") {
+      console.log("responsesms", response);
+      d.title = "SMS";
+      let buildLinkText;
+      if (isAndroid) {
+        d.baselink = response.title;
+        setSmsData(response);
+        buildLinkText = "sms:" + response.title;
+      } else {
+        d.baselink = response.phoneNumber;
+        setSmsData(response);
+        buildLinkText = "sms:" + response.phoneNumber;
+      }
+      if (response.message) {
+        if (isAndroid) {
+          buildLinkText += "?body=" + response.message;
+        } else {
+          buildLinkText += "&body=" + response.message;
+        }
+      }
+      d.linkToOpen = buildLinkText;
+      d.complete = true;
+      d.canOpen = true;
+      setDecode(d);
+      return true;
+    }
+
+    if (t === "WIFI") {
+      d.title = "WIFI";
+      setButtonColor("#01c850");
+      console.log("responsessid", response);
+      d.baselink = response.ssid;
+      setWifiData(response);
+      let buildLinkText = "wifi://";
+      if (response.password) {
+        buildLinkText += ":" + response.password + "@";
+      }
+      buildLinkText += response.ssid;
+      d.complete = true;
+      /* TODO: no good way for now */
+      //setLinkToOpen(buildLinkText)
+      //setCanOpen(true)
+      d.canOpen = false;
+      setDecode(d);
+      return true;
+    }
+
+    if (t === "PHONE") {
+      d.title = "PHONE";
+      d.baselink = response.number;
+      d.linkToOpen = data;
+      setButtonColor("#01c850");
+      d.canOpen = true;
+      d.complete = true;
+      setDecode(d);
+      return true;
+    }
+
+    if (t === "EMAIL") {
+      d.title = "EMAIL";
+      setType("EMAIL");
+      let buildLinkText;
+      if (isAndroid) {
+        d.baselink = response.email?.address;
+        buildLinkText = "mailto:" + response.email.address;
+        if (response.email?.subject) {
+          buildLinkText += "?subject=" + response.email.subject;
+        }
+        if (response.email?.body) {
+          buildLinkText += "?body=" + response.email.body;
+        }
+      } else {
+        d.baselink = response.address;
+        buildLinkText = "mailto:" + response.address;
+        if (response.subject) {
+          buildLinkText += "?subject=" + response.subject;
+        }
+        if (response.body) {
+          buildLinkText += "?body=" + response.body;
+        }
+      }
+      // setLinkToOpen(buildLinkText)
+      d.linkToOpen = data;
+      setButtonColor("#01c850");
+      d.canOpen = true;
+      d.complete = true;
+      setDecode(d);
+      return true;
+    }
+
+    if (t === "ISBN" || t === "BOOK") {
+      setType("BOOK");
+      d.title = "BOOK";
+      d.baselink = "ISBN: " + response.dataRaw;
+      d.linkToOpen = "https://openlibrary.org/isbn/" + response.dataRaw;
+      setButtonColor("#01c850");
+      d.complete = true;
+      d.canOpen = true;
+      setDecode(d);
+      return true;
+    }
+
+    if (t === "GEO") {
+      d.title = "Location";
+      d.baselink = response.latitude + "," + response.longitude;
+      const geoUri =
+        "https://www.google.com/maps/search/?api=1&query=" +
+        response.latitude +
+        "," +
+        response.longitude;
+      d.linkToOpen = geoUri;
+      setButtonColor("#01c850");
+      //setLinkToOpen(data) /* This also works, but with above, we get a marker */
+      d.complete = true;
+      d.canOpen = true;
+      setDecode(d);
+      return true;
+    }
+
+    if (t === "CONTACT_INFO") {
+      d.title = "Contact Information";
+      setVcardData(response);
+      // setBaseLink(response.formattedName);
+      d.baselink = response.phones.length > 0 && response.phones[0].number;
+      d.linkToOpen =
+        response.phones.length > 0 && "tel:" + response.phones[0].number;
+      setButtonColor("#01c850");
+      d.complete = true;
+      d.canOpen = true;
+      setDecode(d);
+      return true;
+    }
+
+    if (t === "CALENDAR_EVENT") {
+      setEventData(response);
+      setButtonColor("#01c850");
+      d.title = "Calendar Event";
+      d.baselink = response.summary;
+      d.complete = true;
+      d.canOpen = false;
+      setDecode(d);
+      return true;
+    }
+
+    return false;
+  }
+
+  useEffect(() => {
+    let forward = false;
+    let d = { ...decode };
+    if (decode.complete) {
+      if (newScan) {
+        /* We will get it again here */
+        if (recordActivity == null) return;
+
+        const analysisToStore = {
+          certIssuerCN: decode.certDetail?.issuer?.CN,
+          certIssuerO: decode.certDetail?.issuer?.O,
+          certValidTo: decode.certDetail?.validTo,
+          safe: decode.safe,
+          hasThreat: decode.hasThreat,
+          threatType: decode.threatType,
+          redirect: decode.redirect,
+          canOpen: decode.canOpen,
+          linkToOpen: decode.linkToOpen,
+          upiName: decode.upiMerchantName,
+          upiVpa: decode.upiMerchantId,
+          upiAmount: decode.upiAmountToPay,
+          hashmark: decode.data,
+        };
+        console.log("toStore: ", type, decode.baselink, analysisToStore);
+        console.log("setrecordActivity", typeof recordActivity, recordActivity);
+        if (recordActivity) {
+          storeActivity(
+            type,
+            data,
+            decode.baselink,
+            lat,
+            lng,
+            analysisToStore,
+            mlkitResponse
+          );
+        }
+      }
+
+      if (!decode.safe) setButtonColor("#ff8800");
+
+      if (decode.canOpen && !decode.safe)
+        setButtonText(i18n.t("details.btnWarning"));
+
+      if (decode.canOpen && decode.hasThreat) {
+        setButtonText(i18n.t("details.btnRisky"));
+        setButtonColor("#ff3547");
+      }
+      return;
+    } else if (decode.fwdurl && decode.certDetail) {
+      d.loading = false;
+      const urlObjOrig = url.parse(data);
+      const urlObj = url.parse(decode.fwdurl);
+      var baseurl = urlObj.protocol + "//" + urlObj.host;
+      /* TODO: this is very strict, lets trim it down */
+      /*
+      if (fwdurl != data) {
+      setRedirect(true)
+      forward = true
+      } */
+      if (urlObjOrig.host !== urlObj.host) {
+        d.redirect = true;
+        forward = true;
+      }
+      d.canOpen = true;
+      d.baselink = baseurl;
+      d.href = urlObj.href;
+      d.linkToOpen = decode.fwdurl;
+      if (urlObj.protocol === "http:") {
+        if (!decode.threatType) d.threatType = "SEQR_HTTP_NO_SSL";
+        d.safe = false;
+        d.title = "Unsecure HTTP";
+        d.complete = true;
+        setDecode(d);
+        return;
+      }
+
+      if (urlObj.protocol === "https:") {
+        if (!decode.hasThreat) {
+          if (forward) {
+            d.title = "Secure HTTPS (redirect)";
+          } else {
+            d.title = "Secure HTTPS";
+          }
+        } else {
+          d.title = "Not Safe Website";
+        }
+        d.complete = true;
+        setDecode(d);
+        return;
+      }
+    } else if (decode.networkFail) {
+      NetInfo.fetch().then((state) => {
+        if (state.isConnected) {
+          d.networkFail = true;
+        } else {
+          d.threatType = "SEQR_NETWORK_FAILURE";
+        }
+        d.complete = true;
+        d.loading = false;
+        d.fwdurl = data;
+        d.linkToOpen = data;
+        d.safe = false;
+        d.certDetail = {};
+        setDecode(d);
+      });
+    }
+  }, [decode, recordActivity]);
+
+  useEffect(() => {
+    let d = { ...decode };
+    if (newScan === false) {
+      /* Coming here from History */
+      d.baselink = storedTitle;
+      d.title = storedTitle;
+      if (storedType != "HASHMARK") {
+        parseMlKitData(mlkitResponse.type, data, mlkitResponse);
+      } else {
+        setType(storedType);
+      }
+      console.log("From Activity", storedAnalysis, mlkitResponse);
+      if (storedAnalysis) {
+        if (storedAnalysis.certIssuerCN) {
+          const cert = {
+            issuer: {
+              CN: storedAnalysis.certIssuerCN,
+              O: storedAnalysis.certIssuerO,
+            },
+            validTo: storedAnalysis.certValidTo,
+          };
+          d.certDetail = cert;
+        }
+        d.canOpen = storedAnalysis.canOpen;
+        d.safe = storedAnalysis.safe;
+        d.hasThreat = storedAnalysis.hasThreat;
+        d.threatType = storedAnalysis.threatType;
+        d.linkToOpen = storedAnalysis.linkToOpen;
+        d.redirect = storedAnalysis.redirect;
+        d.upiMerchantName = storedAnalysis.upiName;
+        d.upiMerchantId = storedAnalysis.upiVpa;
+        d.upiAmountToPay = storedAnalysis.upiAmount;
+        d.data = storedAnalysis.hashmark;
+        d.loading = false;
+      }
+      d.complete = true;
+      setDecode(d);
+      return;
+    }
+    if (data && newScan) {
+      if (!parseMlKitData(mlkitResponse.type, data, mlkitResponse)) {
+        /* If we need further processing, come here */
+        d.canOpen = false;
+        d.safe = true;
+        decodeQR(data, d, setDecode, setType, lat, lng);
+      }
+      return;
+    }
+  }, [newScan, data]);
+
+  useFocusEffect(
+    React.useCallback(() => {
+      // Do something when the screen is focused
+      BackHandler.addEventListener("hardwareBackPress", handleBackButtonClick);
+      return () => {
+        BackHandler.removeEventListener(
+          "hardwareBackPress",
+          handleBackButtonClick
+        );
+      };
+    }, [])
+  );
+
+  function copyToClipboard() {
+    Clipboard.setString(data);
+    SnackBar.show({ text: i18n.t("details.qrContentCopied") });
+  }
+
+  function copyWifiToClipboard(wifiDetails, type) {
+    console.log("type is", type);
+    Clipboard.setString(wifiDetails);
+    SnackBar.show({ text: i18n.t("details.copyText", { type }) });
+  }
+
+  const handleBackButtonClick = () => {
+    navigation.goBack();
+    return true;
+  };
+
+  const ActivityIndicatorLoadingView = () => {
+    //making a view to show to while loading the webpage
+    return (
+      <View>
+        <ActivityIndicator
+          color="#00C3E6"
+          size="large"
+          style={styles.ActivityIndicatorStyle}
+        />
+        <Text>QR content: {data}</Text>
+      </View>
+    );
+  };
+
+
+
+  if (decode.threatType === "SEQR_NETWORK_FAILURE") {
+    return (
+      <SafeAreaView
+        style={[CommanStyles.safeView, { paddingTop: StatusBar.currentHeight }]}
+      >
+        <StatusBar
+          barStyle="dark-content"
+          hidden={false}
+          backgroundColor="#fff"
+          translucent={true}
+        />
+        <Header
+          edit={true}
+          isHistoryEdit={true}
+          title={(newScan ? "Scan Detail - " : "Activity - ") + decode.title}
+          isBackEnable={true}
+          currentRoute={redirectedRoute}
+        />
+
+        <NoInternet data={data} copyToClipBoard={copyToClipboard} />
+      </SafeAreaView>
+    );
+  }
+
+  return (
+    <SafeAreaView
+      style={[CommanStyles.safeView, { paddingTop: StatusBar.currentHeight }]}
+    >
+      <StatusBar
+        barStyle="dark-content"
+        hidden={false}
+        backgroundColor="#fff"
+        translucent={true}
+      />
+      {console.log("Decode", decode)}
+      <Header
+        edit={true}
+        isHistoryEdit={true}
+        title={
+          (newScan ? "Scan Detail - " : "Activity - ") +
+          (type === "HASHMARK" ? "#MARK" : decode.title)
+        }
+        isBackEnable={true}
+        currentRoute={redirectedRoute}
+        isFeedBackEnable={true}
+        openModal={() => setModalVisable(!modalVisible)}
+      />
+
+      <LinearGradient
+        colors={
+          type === "URL"
+            ? !decode.loading
+              ? decode.hasThreat
+                ? riskGradient
+                : decode.safe
+                  ? trustedGradient
+                  : warningGradient
+              : emptyGradient
+            : type === "UPI" || type === "BHIM"
+              ? upiGradient
+              : (type == "HASHMARK" && decode.data != null) || undefined
+                ? decode.data?.revoked
+                  ? riskGradient
+                  : decode.data?.content === null && decode.data?.hidden === false
+                    ? emptyGradient
+                    : hashMarkGradient
+                : emptyGradient
+        }
+        style={styles.linearGradient}
+      >
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ flexGrow: 1 }}
+        >
+          {type == "PHONE" ? (
+            <PhoneInfo
+              phoneNumber={decode.baselink}
+              call={async () => await Linking.openURL(decode.linkToOpen)}
+            />
+          ) : type == "URL" ? (
+            <DetailsCard
+              isSafe={decode.safe}
+              data={decode.linkToOpen}
+              title={decode.baselink}
+              hasThreat={decode.hasThreat}
+              threatType={decode.threatType}
+              certificate={decode.certDetail}
+              qr={data}
+              techDetailsClick={() => gotoDetailView()}
+              copyToClipBoard={() => copyToClipboard()}
+              openInApp={async () => await Linking.openURL(decode.linkToOpen)}
+            />
+          ) : type == "EMAIL" ? (
+            <EmailInfo
+              email={decode.baselink}
+              sendEmail={async () => await Linking.openURL(decode.linkToOpen)}
+            />
+          ) : type === "UPI" || type === "BHIM" ? (
+            <UpiPaymentInfo
+              upiMerchantName={decode.upiMerchantName}
+              upiMerchantId={decode.upiMerchantId}
+              upiAmountToPay={decode.upiAmountToPay}
+              data={data}
+              copyToClipBoard={() => copyToClipboard()}
+              openInApp={async () => await Linking.openURL(decode.linkToOpen)}
+            />
+          ) : type == "TEXT" ? (
+            <TextInfo text={data} copyToClipBoard={() => copyToClipboard()} />
+          ) : type == "HASHMARK" ? (
+            <HashMarkInfo
+              hashLink={data}
+              displayData={decode}
+              copyToClipBoard={() => copyToClipboard()}
+              openInApp={async () =>
+                await Linking.openURL(decode.data.content.url)
+              }
+              title={decode.baselink}
+            // data={decode.linkToOpen}
+            />
+          ) : type == "BOOK" ? (
+            <BookInfo
+              text={data}
+              openUrl={async () => await Linking.openURL(decode.linkToOpen)}
+            />
+          ) : type == "CALENDAR_EVENT" ? (
+            <CalenderInfo
+              eventData={eventData}
+              addCalender={() =>
+                /* TODO: fix the link */
+                Linking.openURL("content://com.android.calendar/time/")
+              }
+            />
+          ) : type == "CONTACT_INFO" ? (
+            <VCardInfo
+              data={vcardData}
+              call={async () => {
+                /* TODO: fix the link to open */
+                await Linking.openURL(decode.linkToOpen);
+              }}
+            />
+          ) : type == "GEO" ? (
+            <GeoLocationInfo
+              location={decode.baselink}
+              locationRedirect={async () =>
+                await Linking.openURL(decode.linkToOpen)
+              }
+            />
+          ) : type == "WIFI" ? (
+            <WifiInfo
+              wifiData={wifiData}
+              copyToClipBoard={copyWifiToClipboard}
+            />
+          ) : type == "SMS" ? (
+            <SmsInfo
+              smsData={smsData}
+              sendMessage={async () => await Linking.openURL(decode.linkToOpen)}
+            />
+          ) : (
+            type !== null && <TextInfo text={data} title="Unknown Type of QR" />
+          )}
+        </ScrollView>
+      </LinearGradient>
+      {/* {type == "HASHMARK" ? setOpenUrl(decode.data.content.url) : setOpenUrl(decode.linkToOpen)} */}
+      {(decode.canOpen && type === "URL") ||
+        type === "URL" ||
+        type === "UPI" ? (
+        <>
+          <TouchableOpacity
+            style={styles.appOpenButton}
+            onPress={async () => await Linking.openURL(decode.linkToOpen)}
+          >
+            {type === "UPI" ? (
+              <Text style={styles.appOpenButtonText}>Open Payment App</Text>
+            ) : (
+              <Text style={styles.appOpenButtonText}>
+                Open in Browser {buttonText}
+              </Text>
+            )}
+          </TouchableOpacity>
+        </>
+      ) : type === "HASHMARK" ? (
+        <>
+          {decode?.data?.content && (
+            <TouchableOpacity
+              style={styles.appOpenButton}
+              onPress={async () =>
+                await Linking.openURL(
+                  decode.data?.content?.url ? decode.data.content.url : data
+                )
+              }
+            >
+              <Text style={styles.appOpenButtonText}>
+                Open in Browser {buttonText}
+              </Text>
+            </TouchableOpacity>
+          )}
+        </>
+      ) : (
+        <>
+          {decode.translate && (
+            <View style={styles.qrLinkDetails}>
+              <View style={{ borderTopWidth: 1, borderColor: "black" }}></View>
+              <Text style={styles.messageHeadText}>
+                {i18n.t("details.translatedText")}
+              </Text>
+              <Text style={{ marginTop: 10 }}>{decode.translate}</Text>
+            </View>
+          )}
+        </>
+      )}
+    </SafeAreaView>
+  );
+};
+
+export default QrDetails;

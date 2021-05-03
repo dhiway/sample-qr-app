@@ -1,0 +1,119 @@
+{
+  "translation": {
+    "app": {
+      "Scan": "Changanua",
+      "Settings": "Mipangilio",
+      "Activity": "Shughuli",
+      "seqrByDhiway": "SEQR na DHIWAY"
+    },
+    "activity": {
+      "noDataUseScan": "Inaonekana bado haujakagua misimbo yoyote ya QR! Tafadhali soma nambari ya QR ili uone viingilio hapa",
+      "disabledMessage": "Umelemaza kurekodi shughuli zako za skena. Ikiwa unataka kuiwezesha, tafadhali tembelea ukurasa wa Mipangilio ili kuiwezesha tena. Programu ya SEQR itaendelea kufanya kazi bila shida yoyote bila kurekodi shughuli. Bonyeza kwenye Tambaza hapa chini ili kufungua kamera ili kuchanganua nambari"
+    },
+    "onboard": {
+      "title0": "SEQR ni",
+      "subTitle0": "Daima BURE",
+      "description0": "Karibu kwa njia salama ya kuchanganua nambari za QR! Ukiwa na SEQR sasa unaweza kuona kilicho nyuma ya QR, ujulishwe juu ya usalama wa nambari, na ikiwa ni salama au ni hatari.",
+      "topContent1": "Uhakika kabisa katika shughuli za kila siku!",
+      "title1": "Je! Inafanyaje ",
+      "subTitle1": "KAZI?",
+      "description1": "Ukiwa na SEQR, unaweza kukagua na kusoma kila aina ya Nambari za QR. Inafanya hundi kadhaa kwa kutumia habari kutoka vyanzo anuwai vya mkondoni kutambua hatari za usalama. Inakuwezesha kufanya maamuzi sahihi kuhusu ikiwa uamini au usitumaini kanuni na yaliyomo.",
+      "centerContent2": "Ukipata kiunga cha wavuti wa wizi, ripoti hiyo na utusaidie kufanya miamala kuwa salama",
+      "title2": "Jiunge na harakati za",
+      "subTitle2": "Mtandao salama",
+      "description2": "Kila wakati unapokutana na habari iliyowekwa kimakundi vibaya, tafadhali ripoti hiyo ili kusaidia watu zaidi kukaa salama mkondoni."
+    },
+    "permission": {
+      "proceedWithout": "Kuendelea bila ufikiaji",
+      "seqrAsk": "SEQR inahitaji upatikanaji wa ",
+      "deny": "Kataa",
+      "accessCamera": "Kamera",
+      "cameraReason": "kuchanganua Nambari za QR",
+      "accessStorage": "Uhifadhi,",
+      "storageReason": "kusoma picha zilizopakiwa za Msimbo wa QR",
+      "accessLocation": "Mahali",
+      "locationReason": "kukukumbusha mahali ambapo Nambari ya QR (katika shughuli) ilichanganuliwa",
+      "grant": "Ruhusu ruhusa"
+    },
+    "details": {
+      "btnWarning": "(Sio salama!)",
+      "btnRisky": "(Hatari!)",
+      "qrContentCopied": "Yaliyonakiliwa QR Yaliyomo",
+      "translatedText": "Maandishi yaliyotafsiriwa"
+    },
+    "scan": {
+      "noCameraAccess": "Hakuna Ufikiaji wa Kamera",
+      "noCameraAccessDetail": "Bila ufikiaji wa Kamera, SEQR haiwezi kukagua Nambari za QR",
+      "timeout": "Muda umeisha. Hakuna QR zilizochanganuliwa",
+      "timeoutText": "Haikuchunguzwa nambari zozote katika sekunde 30 zilizopita, fungua tena kichupo cha Kutambaza ukiwa tayari kukagua. Kuweka kamera kwa muda mrefu kunaweza kumaliza betri. Kufungua kichupo cha Shughuli.",
+      "qrHint": "Pata nambari ya kukagua"
+    },
+    "settings": {
+      "aboutSEQR": "SEQR imeundwa kuchanganua na kusoma kila aina ya Nambari za QR na kutambua yaliyomo salama ambayo unaweza kupata. Inafanya hundi kadhaa kwa kuongeza kutumia habari kutoka vyanzo anuwai vya mkondoni kutambua hatari za usalama. Inakuwezesha kufanya maamuzi sahihi kuhusu ikiwa uamini au usitumaini kanuni na yaliyomo.",
+      "safeAdvisory": "Kuvinjari Salama",
+      "userAgreement": "Masharti ya Huduma",
+      "privacyPolicy": "Sera ya faragha",
+      "aboutDhiway": "Kuhusu Dhiway",
+      "langChange": "Chagua lugha yako",
+      "defaultScreenPick": "Shughuli kama skrini chaguomsingi",
+      "recordActivity": "Rekodi Shughuli"
+    },
+    "lang": {
+      "English": "Kiingereza",
+      "Kannada": "Kikannada",
+      "Malayalam": "Kimalayalam",
+      "Bengali": "Kibengali",
+      "Hindi": "Kihindi"
+    },
+    "common": {
+      "bookQR": "Kitabu ISBN",
+      "textQR": "Nambari uliyochanganua ina maelezo yafuatayo",
+      "eventLabel": "Tukio",
+      "nameLabel": "Jina",
+      "addressLabel": "Anwani",
+      "amountLabel": "Kiasi",
+      "paymentLabel": "Malipo",
+      "dateLabel": "Tarehe",
+      "startsAtLabel": "Huanza saa",
+      "locationLabel": "Mahali",
+      "emailLabel": "Barua pepe",
+      "phoneNumberLbl": "Nambari ya simu",
+      "smsLabel": "SMS",
+      "recipientLabel": "Mpokeaji",
+      "textMsgLabel": "Ujumbe wa maandishi",
+      "composeSmsBtn": "Tunga ujumbe wa maandishi",
+      "addToCalendarBtn": "Ongeza kwenye Kalenda",
+      "callOrganizerBtn": "Panga Mratibu",
+      "addLocationBtn": "Hifadhi Mahali kwenye Ramani",
+      "sendEmailBtn": "Kutuma barua pepe",
+      "qrContent": "Kiungo cha Malipo"
+    },
+    "threat": {
+      "typeSafe": "Hakuna Maudhui Yasiyokuwa Salama Yanayopatikana.",
+      "typeNotSecure": "Sio Salama - Labda Hatari",
+      "typeUnSafe": "Hatari - Epuka Tovuti hii",
+      "safeTypeDetail": "Habari unayotuma au kupokea kupitia wavuti ni salama. Hata kama tovuti imealamishwa salama, daima kuwa mwangalifu unaposhiriki habari za kibinafsi. Angalia mwambaa wa anwani ili uhakikishe kuwa uko kwenye tovuti unayotaka kutembelea.",
+      "unSafeTypeDetail": "Tovuti hii imetiwa alama kuwa si salama. Kutembelea wavuti hii kunaweza kukudanganya kufanya kitu hatari kama kusanikisha programu au kufunua habari yako ya kibinafsi (kwa mfano, nywila, nambari za simu, au kadi za mkopo) au kutumia kifaa chako kufanya vitu ambavyo haukukusudia.",
+      "notSecureTypeDetail": "Tovuti hii haitoi muunganisho salama. Mtu anaweza kuona au kubadilisha habari unayotuma na kupokea kupitia tovuti hii. Tunashauri usiingize habari yoyote ya kibinafsi au ya kibinafsi kwenye ukurasa huu. Ikiwezekana, usitumie tovuti.",
+      "typeErrorSiteNotFound": "Hatuwezi kuonekana kufikia wavuti. Ukurasa huu haupo au hitilafu nyingine mbaya imetokea. ",
+      "typeErrorFailure": "Tunafanya kazi ya kurekebisha hii haraka iwezekanavyo. Tafadhali jaribu tena baadae.",
+      "typeErrorNoConnection": "Hakuna Muunganisho wa Mtandao. Angalia mipangilio yako ya mtandao na ujaribu tena."
+    },
+    "modal": {
+      "safeDetails": "Habari unayotuma au kupitia tovuti hiyo ni salama. Hata ukiona ujumbe huu, kila wakati kuwa mwangalifu unaposhiriki habari za kibinafsi. Angalia mwambaa wa anwani ili uhakikishe uko kwenye tovuti unayotaka kutembelea.",
+      "notSecureDetails": "Tovuti hii haiwezi kutoa muunganisho salama. Mtu anaweza kuona au kubadilisha habari unayotuma au kupitia tovuti hii. Tunashauri usiingize habari yoyote ya kibinafsi au ya kibinafsi kwenye ukurasa huu. Ikiwezekana, usitumie tovuti.",
+      "unSafeDetails": "Kutembelea wavuti hii kunaweza kukudanganya kufanya kitu hatari kama kusanikisha programu au kufunua habari yako ya kibinafsi (kwa mfano, nywila, nambari za simu, au kadi za mkopo) au tumia kompyuta yako kufanya vitu ambavyo haukukusudia."
+    },
+    "message": {
+      "lastUpdated": "Maelezo haya yalisasishwa mwisho mnamo {{date}}.",
+      "siteSaftey": "Usalama wa wavuti unaweza kubadilika kwa muda. Angalia tena sasisho.",
+      "paymentDetails": "Kiungo cha Malipo",
+      "internetError": "Polepole au hakuna muunganisho wa mtandao, Tafadhali angalia mipangilio yako ya mtandao.",
+      "internetErrorHead": "Lo!"
+    },
+    "upi": {
+      "detailWithPaymentText": "QR hii ina kiunga cha kulipa INR {{amountToPay}} kwa {{merchantName}} na anwani ya VPA {{merchantId}}. Unaweza kutumia programu zozote za malipo kutuma pesa ikiwa unataka.",
+      "detailText": "QR hii ina kiunga cha kulipa {{merchantName}} na anwani ya VPA {{merchantId}}. Unaweza kutumia programu zozote za malipo kutuma pesa ikiwa unataka."
+    }
+  }
+}
