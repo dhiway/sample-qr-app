@@ -6214,9 +6214,9 @@ react-native-app-intro-slider@^4.0.4:
   resolved "https://registry.yarnpkg.com/react-native-app-intro-slider/-/react-native-app-intro-slider-4.0.4.tgz#fa5cda7057db62c448ac975ffd2ba0cff94cc8d8"
   integrity sha512-Zkjaol6X3BbZkHUpVDj2LjdidpS6rCgKi0fx80xgGKa0pHxBRd4swWTv2bHnnvu5k1/HXwYk0mY2TbK+2jHl5w==
 
-"react-native-camera@git+ssh://git@github.com/smohan-dw/react-native-camera.git":
-  version "3.40.0"
-  resolved "git+ssh://git@github.com/smohan-dw/react-native-camera.git#92731d0593e356bb0a0023fe60ff97f6f7231645"
+"react-native-camera@git+ssh://git@github.com/dhiway/react-native-camera.git":
+  version "3.43.6"
+  resolved "git+ssh://git@github.com/dhiway/react-native-camera.git#efb95a42d6fd8fec74f1eb131d2a23bff2df2564"
   dependencies:
     prop-types "^15.6.2"
 
