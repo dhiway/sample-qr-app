@@ -2,6 +2,8 @@ package com.dhiway.app.seqr_public;
 
 import android.app.Application;
 import android.content.Context;
+
+import com.dhiway.app.seqr.MLKitModulePackage;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.BV.LinearGradient.LinearGradientPackage;
@@ -29,6 +31,7 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
+            packages.add(new MLKitModulePackage());
           return packages;
         }
 
@@ -49,6 +52,8 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
+
+    
 
   /**
    * Loads Flipper in React Native templates. Call this in the onCreate method with something like

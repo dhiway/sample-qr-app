@@ -23,7 +23,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-
 // import Splash from "./src/components/Splash";
 import Permissions from "./src/components/Permissions";
 import Scan from "./src/components/Scan";
@@ -32,6 +31,8 @@ import Webview from "./src/components/Webview";
 // import Onboarding from "./src/components/Onboarding";
 import QrIcons from "./src/shared/QrIcons";
 
+import { NativeModules } from "react-native";
+const { MLKit } = NativeModules;
 
 import Providers from "./src/lib";
 import i18n from "./src/lib/I18n";
